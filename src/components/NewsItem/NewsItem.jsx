@@ -3,7 +3,8 @@ import styles from './styles.module.css';
 
 const NewsItem = ({ item }) => {
     return (
-        <li className={styles.item}>
+        <a href={item.url} target="_blank" rel="noopener noreferrer" >
+            <li className={styles.item}>
             <div
                 className={styles.wrapper}
                 style={{ backgroundImage: `url(${item.image})` }}
@@ -16,6 +17,7 @@ const NewsItem = ({ item }) => {
                 </p>
             </div>
         </li>
+        </a>
     );
 };
 

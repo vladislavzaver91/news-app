@@ -42,7 +42,6 @@ const NewsByFilters = () => {
     return (
         <section className={styles.section}>
             <NewsFilters filters={filters} changeFilter={changeFilter} />
-
             <PaginationWrapper
                 top
                 bottom

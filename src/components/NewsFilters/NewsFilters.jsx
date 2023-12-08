@@ -4,13 +4,15 @@ import Slider from '../Slider/Slider'
 import Categories from "../Categories/Categories";
 import Search from "../Search/Search";
 import styles from './styles.module.css'; 
+import { useTheme } from "../../helpres/hooks/useTheme";
 
 const NewsFilters = ({ filters, changeFilter }) => {
+    const { isDark } = useTheme();
     const { data: dataCategories } = useFetch(getCategories);
     return (
         <div className={styles.filters}>
             {dataCategories ? (
-                <Slider>
+                <Slider isDark={isDark}>
                     <Categories
                         categories={dataCategories.categories}
                         selectedCategory={filters.category}

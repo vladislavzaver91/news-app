@@ -2,14 +2,17 @@ import { formatTimeAgo } from "../../helpres/formatTimeAgo";
 import Image from "../Image/Image";
 import styles from './styles.module.css'; 
 
-const NewsBanner = ({item}) => {
+const NewsBanner = ({ item }) => {
+
     return (
         <div className={styles.banner}>
-            <Image img={item?.image} />
-            <h3 className={styles.title}>{item.title}</h3>
-            <p className={styles.extra}>
-                {formatTimeAgo(item.published)} by {item.author}
-            </p>
+            <a href={item.url} target="_blank" rel="noopener noreferrer" >
+                <Image img={item?.image} />
+                <h3 className={styles.title}>{item.title}</h3>
+                <p className={styles.extra}>
+                    {formatTimeAgo(item.published)} by {item.author}
+                </p>
+            </a>
         </div>
     );
 };

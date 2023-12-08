@@ -1,8 +1,11 @@
+import { useTheme } from "../../helpres/hooks/useTheme";
 import styles from './styles.module.css'; 
 
 const Pagination = ({ currentPage, totalPages, handlePrevPage, handleNextPage, handlePageClick }) => {
+    const { isDark } = useTheme();
+    
     return (
-        <div className={styles.pagination}>
+        <div className={`${styles.pagination} ${isDark ? styles.dark : styles.light}`}>
             <button
                 disabled={currentPage <= 1}
                 onClick={handlePrevPage}
