@@ -11,3 +11,24 @@
     padding: 24px;
     min-height: 100vh;
 }
+
+.wrap.dark .container {
+    background-color: #23272f;
+}
+
+.wrap.light .container {
+    background-color: #ffffff;
+}
+
+.wrap.dark p,
+.wrap.dark h3,
+.wrap.dark h1 {
+    color: #f6f7f9;
+}
+
+.wrap.light p,
+.wrap.light h3,
+.wrap.light h1 {
+    color: #000000;
+}
+

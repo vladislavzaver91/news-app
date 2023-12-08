@@ -1,11 +1,26 @@
 .header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding: 12px 24px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-bottom: 1px solid #f2f4f5;
+}
+
+.infoWrapper {
+    display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+.dark {
+    background-color: #23272f;
+    border-bottom: 1px solid rgb(60, 60, 60);
+}
+
+.light {
+    background-color: #ffffff;
 }
 
 .title {
@@ -16,3 +31,25 @@
 .date {
     font-size: 16px;
 }
+
+.themeToggleBtn {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 32px;
+};
+
+.sunIcon {
+    color: #f6f7f9;
+}
+
+.sunIcon:hover,
+.sunIcon:focus,
+.moonIcon:hover,
+.moonIcon:focus {
+fill: #6b4eff;
+};

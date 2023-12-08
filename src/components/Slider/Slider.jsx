@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import styles from './styles.module.css'; 
 
-const Slider = ({ children, step = 150 }) => {
+const Slider = ({ children, step = 150, isDark }) => {
     const sliderRef = useRef(null);
 
     const scrollLeft = () => {
@@ -13,7 +13,7 @@ const Slider = ({ children, step = 150 }) => {
     }
 
     return (
-        <div className={styles.slider}>
+        <div className={`${styles.slider} ${isDark ? styles.dark : styles.light}`}>
             <button onClick={scrollLeft} className={styles.arrow}>
                 {'<'}
             </button>

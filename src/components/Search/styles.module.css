@@ -5,9 +5,23 @@
     gap: 12px;
 }
 
+.dark {
+    background-color: #23272f;
+}
+
+.light {
+    background-color: #ffffff;
+}
+
 .input {
+    outline: none;
     width: 100%;
     padding: 10px;
-    border: 1px solid #f2f3f5;
+    border: 2px solid #f2f3f5;
     border-radius: 12px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.input:focus {
+    border-color: #6b4eff;
 }

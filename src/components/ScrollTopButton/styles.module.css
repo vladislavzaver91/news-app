@@ -1,0 +1,42 @@
+.scrollTopBtn {
+    position: absolute;
+    border: none;
+    text-align: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 40px;
+    z-index: 1;
+    background-color: #6b4eff;
+}
+
+.scrollTopIcon {
+    width: 32px;
+    height: 32px;
+    color: #e7e7ff;
+}
+
+.scrollTopIcon:hover,
+.scrollTopIcon:focus {
+    color: #68a1ec;
+    transition: 0.3s;
+}
+
+.scrollTopBtn:hover,
+.scrollTopIcon:focus {
+    background-color: #e7e7ff;
+    transition: 0.3s;
+}
+
+.show {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.hide {
+    opacity: 0;
+}

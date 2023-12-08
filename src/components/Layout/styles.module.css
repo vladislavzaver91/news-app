@@ -1,0 +1,13 @@
+.wrapper {
+    padding: 10px;
+}
+
+.wrapper.light {
+    background-color: #ffffff;
+    color: #222222;
+};
+
+.wrapper.dark {
+    background-color: #060606;
+    color: #ffffff;
+}
