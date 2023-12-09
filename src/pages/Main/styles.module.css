@@ -1,4 +1,4 @@
-.main {
+.mainWrapper {
     position: relative;
     display: grid;
     width: 100%;
@@ -7,7 +7,7 @@
 }
 
 @media (max-width: 760px) {
-    .main {
+    .mainWrapper {
         grid-template-columns: 1fr
     }
 }
