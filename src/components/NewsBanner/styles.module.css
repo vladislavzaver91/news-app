@@ -1,16 +1,51 @@
 .banner {
     display: flex;
+    align-items: stretch;
     width: 100%;
     flex-direction: column;
     gap: 12px;
 }
 
+.banner.dark .textWrapper {
+    border-left: 1px solid rgb(60, 60, 60);
+    border-right: 1px solid rgb(60, 60, 60);
+    border-bottom: 1px solid rgb(60, 60, 60);
+}
+
+.itemLink {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.itemLink:hover {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 8px 12px;
+};
+
 .title {
     font-size: 16px;
-
 }
 
 .extra {
-    font-size: 12px;
+    margin-top: 8px;
+    font-size: 10px;
     color: #6c7072;
+}
+@media screen and (min-width: 768px) {
+    .extra {
+    font-size: 12px;
+}
 }
