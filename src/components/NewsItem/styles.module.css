@@ -4,9 +4,31 @@
     gap: 12px;
 }
 
+.item.dark .itemLink {
+    border-top: 1px solid rgb(60, 60, 60);
+    border-right: 1px solid rgb(60, 60, 60);
+    border-bottom: 1px solid rgb(60, 60, 60);
+}
+
+.itemLink {
+    width: 100%;
+    border-top: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.itemLink:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.itemWrapper {
+    display: flex;
+}
+
 .title {
     font-size: 14px;
-
 }
 
 .extra {
@@ -18,11 +40,12 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    padding: 4px 4px 4px 8px;
 }
 
 .wrapper {
     width: 64px;
-    height: 64px;
+    min-height: 64px;
     background-color: #f2f4f5;
     background-position: center;
     background-size: cover;

@@ -36,10 +36,13 @@
     color: #000000;
 }
 
-
-.pageNumber:disabled,
-.arrow:disabled {
+.pagination.dark .pageNumber.active,
+.pagination.dark .arrow.active,
+.pagination.light .pageNumber.active,
+.pagination.light .arrow.active {
+    color: #6b4eff;
     cursor: default;
+    font-size: 16px;
     font-weight: 600;
 }
 
