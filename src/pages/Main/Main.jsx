@@ -5,7 +5,7 @@ import ScrollTopButton from '../../components/ScrollTopButton/ScrollTopButton';
 
 const Main = () => {
     return (
-        <main className={styles.main}>
+        <main className={styles.mainWrapper}>
             <LatestNews />
             <NewsByFilters />
             <ScrollTopButton />
