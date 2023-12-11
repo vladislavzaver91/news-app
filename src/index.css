@@ -30,13 +30,13 @@
 }
 
 .wrap.light .container {
-    background-color: #ffffff;
+    background-color: #F0F8FF;
 }
 
 .wrap.dark p,
 .wrap.dark h3,
 .wrap.dark h1 {
-    color: #f6f7f9;
+    color: #F0F8FF;
 }
 
 .wrap.light p,

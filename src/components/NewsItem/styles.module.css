@@ -12,9 +12,9 @@
 
 .itemLink {
     width: 100%;
-    border-top: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
+    border-top: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
 }
 
 .itemLink:hover {

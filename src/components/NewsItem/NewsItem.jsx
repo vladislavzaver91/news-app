@@ -1,9 +1,12 @@
 import { formatTimeAgo } from "../../helpres/formatTimeAgo";
 import { useTheme } from "../../helpres/hooks/useTheme";
+import defaultImg from '/src/images/default-img.jpg';
 import styles from './styles.module.css'; 
 
 const NewsItem = ({ item }) => {
     const { isDark } = useTheme();
+
+    const backgroundImage = item.image && item.image !== 'None' ? `url(${item.image})` : `url(${defaultImg})`;
 
     return (
         <li className={`${styles.item} ${isDark ? styles.dark : ''}`}>
@@ -11,7 +14,7 @@ const NewsItem = ({ item }) => {
                 <div className={styles.itemWrapper}>
                     <div
                         className={styles.wrapper}
-                        style={{ backgroundImage: `url(${item.image})` }}
+                        style={{ backgroundImage: backgroundImage }}
                     >
                     </div>
                     <div className={styles.info}>

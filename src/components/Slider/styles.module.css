@@ -17,6 +17,15 @@
 }
 
 .slider.light .arrow {
-    background-color: #ffffff;
+    background-color: #F0F8FF;
     color: #000000;
+}
+
+.slider.dark .arrow:hover,
+.slider.dark .arrow:focus,
+.slider.light .arrow:hover,
+.slider.light .arrow:focus {
+    color: #6b4eff;
+    font-size: 16px;
+    font-weight: 600;
 }

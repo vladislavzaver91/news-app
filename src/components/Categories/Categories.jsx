@@ -12,13 +12,14 @@ const Categories = forwardRef(
                     All
                 </button>
                 {categories.map(category => {
+                    const capitalizedCategory = category.charAt(0).toUpperCase() + category.slice(1);
                     return (
                         <button
                             onClick={() => setSelectedCategory(category)}
                             className={selectedCategory === category ? styles.active : styles.item}
                             key={category}
                         >
-                            {category}
+                            {capitalizedCategory}
                         </button>
                     )
                 })}

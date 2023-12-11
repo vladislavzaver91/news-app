@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <header className={`${styles.header} ${isDark ? styles.dark : styles.light}`}>
             <div className={styles.infoWrapper}>
-                <h1 className={styles.title}>NEWS APP</h1>
+                <h1 className={styles.title}><span>NEWS</span> APP</h1>
                 <p className={styles.date}>{formatDate(new Date())}</p>
             </div>
             <button

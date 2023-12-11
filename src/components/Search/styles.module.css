@@ -15,14 +15,14 @@
 }
 
 .light {
-    background-color: #ffffff;
+    background-color: #F0F8FF;
 }
 
 .input {
     outline: none;
     width: 100%;
     padding: 10px;
-    border: 2px solid #f2f3f5;
+    border: 2px solid #e7e7e7;
     border-radius: 12px;
     transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
