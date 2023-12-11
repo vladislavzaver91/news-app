@@ -16,12 +16,12 @@
     padding: 8px 16px;
     border: none;
     border-radius: 32px;
-    background-color: #f2f4f5;
+    background-color: #DCDCDC;
     cursor: pointer;
 }
 
 .active {
-    background-color: #e7e7ff;
+    background-color: #a8cbf8;
     color: #6b4eff;
 }
 

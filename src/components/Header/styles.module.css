@@ -5,7 +5,7 @@
     width: 100%;
     padding: 12px 24px;
     background-color: #ffffff;
-    border-bottom: 1px solid #f2f4f5;
+    border-bottom: 1px solid #e7e7e7;
 }
 
 .infoWrapper {
@@ -20,12 +20,15 @@
 }
 
 .light {
-    background-color: #ffffff;
+    background-color: #F0F8FF;
 }
 
 .title {
     font-size: 28px;
+}
 
+.title span {
+    color: #6b4eff;
 }
 
 .date {
@@ -44,7 +47,7 @@
 };
 
 .sunIcon {
-    color: #f6f7f9;
+    color: #F0F8FF;
 }
 
 .sunIcon:hover,
