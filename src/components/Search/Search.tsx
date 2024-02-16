@@ -1,7 +1,12 @@
 import { useTheme } from "../../helpres/hooks/useTheme";
 import styles from './styles.module.css'; 
 
-const Search = ({ keywords, setKeywords }) => {
+interface Props {
+    keywords: string;
+    setKeywords: (keywords: string) => void;
+}
+
+const Search = ({ keywords, setKeywords }: Props) => {
     const { isDark } = useTheme();
 
     return (

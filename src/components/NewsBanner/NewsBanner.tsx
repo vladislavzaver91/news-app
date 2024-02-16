@@ -1,9 +1,14 @@
 import { formatTimeAgo } from "../../helpres/formatTimeAgo";
 import { useTheme } from "../../helpres/hooks/useTheme";
+import { INews } from "../../interfaces";
 import Image from "../Image/Image";
 import styles from './styles.module.css'; 
 
-const NewsBanner = ({ item }) => {
+interface Props {
+    item: INews;
+}
+
+const NewsBanner = ({ item }: Props) => {
     const { isDark } = useTheme();
 
     return (
