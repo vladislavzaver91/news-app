@@ -19,6 +19,12 @@
         grid-template-columns: 1fr
     }
 }
+/* @media (max-width: 760px) {
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+} */
 
 .container {
     padding: 24px;

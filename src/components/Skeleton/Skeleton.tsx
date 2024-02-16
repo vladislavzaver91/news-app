@@ -1,6 +1,13 @@
+import { TypeDirection, TypeSkeleton } from '../../interfaces';
 import styles from './styles.module.css'; 
 
-const Skeleton = ({ count = 1, type = 'banner', direction = 'column' }) => {
+interface Props {
+    type?: TypeSkeleton;
+    count?: number;
+    direction?: TypeDirection;
+}
+
+const Skeleton = ({ count = 1, type = 'banner', direction = 'column' }: Props) => {
     return (
         <>
             {count > 1 ? (

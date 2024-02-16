@@ -1,7 +1,11 @@
 import styles from './styles.module.css'; 
 import defaultImage from '../../images/default-img.jpg'
 
-const Image = ({ img }) => {
+interface Props {
+    img: string;
+}
+
+const Image = ({ img }: Props) => {
     return (
         <div className={styles.wrapper}>
             {img !== 'None' ? (
