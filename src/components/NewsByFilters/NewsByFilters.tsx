@@ -2,6 +2,7 @@ import { PAGE_SIZE, TOTAL_PAGES } from '../../constants/constants';
 import { useDebounce } from '../../helpres/hooks/useDebounce';
 import { useFetch } from '../../helpres/hooks/useFetch';
 import { useFilters } from '../../helpres/hooks/useFilters';
+import { INewsApiRes, TypeParams } from '../../interfaces';
 import { getNews } from '../../services/apiNews';
 import NewsFilters from '../NewsFilters/NewsFilters';
 import NewsList from '../NewsList/NewsList';
@@ -18,7 +19,7 @@ const NewsByFilters = () => {
 
     const debouncedKeywords = useDebounce(filters.keywords, 1500);
 
-    const { data, isLoading } = useFetch(getNews, {
+    const { data, isLoading } = useFetch<INewsApiRes, TypeParams>(getNews, {
         ...filters,
         keywords: debouncedKeywords,
     });
@@ -35,7 +36,7 @@ const NewsByFilters = () => {
         }
     };
 
-    const handlePageClick = pageNumber => {
+    const handlePageClick = (pageNumber: number) => {
         changeFilter('page_number', pageNumber);
     };
 

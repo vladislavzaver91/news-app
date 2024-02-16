@@ -1,7 +1,10 @@
 import { useTheme } from "../../helpres/hooks/useTheme";
+import { IPaginationProps } from "../../interfaces";
 import styles from './styles.module.css'; 
 
-const Pagination = ({ currentPage, totalPages, handlePrevPage, handleNextPage, handlePageClick }) => {
+
+
+const Pagination = ({ currentPage, totalPages, handlePrevPage, handleNextPage, handlePageClick }: IPaginationProps) => {
     const { isDark } = useTheme();
     
     return (

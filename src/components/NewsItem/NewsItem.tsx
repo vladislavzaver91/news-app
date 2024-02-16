@@ -2,8 +2,13 @@ import { formatTimeAgo } from "../../helpres/formatTimeAgo";
 import { useTheme } from "../../helpres/hooks/useTheme";
 import defaultImg from '/src/images/default-img.jpg';
 import styles from './styles.module.css'; 
+import { INews } from "../../interfaces";
 
-const NewsItem = ({ item }) => {
+interface Props {
+    item: INews;
+}
+
+const NewsItem = ({ item }: Props) => {
     const { isDark } = useTheme();
 
     const backgroundImage = item.image && item.image !== 'None' ? `url(${item.image})` : `url(${defaultImg})`;
